@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listenify</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="brand"><img src="logo.webp" alt="Spotify" />Listenify</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+    <section id="home">
+    <div class="container">
+      <div class="songList">
+        <h1>Best of Lofi - Coding Beats</h1>
+        <div class="songItemContainer">
+          <div>
+            <div class="songItem">
+              <img src="cover1.jpg" alt="1" />
+              <span class= "songName">PassionFruit</span>
+              <span class="songlistplay"
+                ><span class="timestamp"
+                  >1:00:00 <i id ="1"class="far songItemPlay fa-play-circle"></i></span
+              ></span>
+            </div>
+            <div class="songItem">
+              <img src="cover2.jpg" alt="1" />
+              <span class= "songName">Stay</span>
+              <span class="songlistplay"
+                ><span class="timestamp"
+                  >1:01:44 <i id ="2"class="far songItemPlay fa-play-circle"></i></span
+              ></span>
+            </div>
+            <div class="songItem">
+              <img src="cover3.jpg" alt="1" />
+              <span class= "songName">i'm in love with a ghost</span>
+              <span class="songlistplay"
+                ><span class="timestamp"
+                  >2:03 <i id ="3"class="far songItemPlay fa-play-circle"></i></span
+              ></span>
+            </div>
+            <div class="songItem">
+              <img src="cover4.jpg" alt="1" />
+              <span class= "songName">Brontosaurus</span>
+              <span class="songlistplay"
+                ><span class="timestamp"
+                  >2:22 <i id ="4"class="far fa-play-circle"></i></span
+              ></span>
+            </div>
+            <div class="songItem">
+              <img src="cover5.jpg" alt="1" />
+              <span class= "songName">Come Back Down</span>
+              <span class="songlistplay"
+                ><span class="timestamp"
+                  >4:53 <i id ="5"class="far songItemPlay fa-play-circle"></i></span
+              ></span>
+            </div>
+            <div class="songItem">
+              <img src="cover6.jpg" alt="1" />
+              <span class= "songName">Sunset Lover</span>
+              <span class="songlistplay"
+                ><span class="timestamp"
+                  >3:34 <i id ="6"class="far songItemPlay fa-play-circle"></i></span
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="songBanner"></div>
+    </div>
+</section>
+<section id="about">
+    <div class="aboutcontainer">
+        <h1>About</h1>
+        <div class="info">
+            Hi! thanks for visiting my website!
+            <br>
+            These are some beats that i like listening to while coding.
+            Hope you enjoyed listening them!
+            <br>
+            <div class="social">
+                <a href="https://www.instagram.com/dc_vector_/" target="_blank">
+                  <img src="instagram.webp"onContextMenu="return false;" alt="">
+                </a>
+                <a href="https://twitter.com/home" target="_blank">
+                  <img id="twitter"src="twitter.png"onContextMenu="return false;" alt="">
+                </a>
+                <a href="https://facebook.com/home" target="_blank">
+                  <img src="facebook.png"onContextMenu="return false;" alt="">
+                </a>
+                <a href="https://github.com/VEcTorX009" target="_blank">
+                  <img src="github.png"onContextMenu="return false;" alt="">
+                </a>
+              </div>
+        </div>
+    </div>
+</section>
+    <div class="bottom">
+      <input type="range" name="range" id="myProgressBar" min="0" max="100" />
+      <div class="icons">
+        <!-- fontawesome icons -->
+        <i class="fas fa-3x fa-step-backward" id="previous"></i>
+        <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+        <i class="fas fa-3x fa-step-forward" id= "next"></i>
+      </div>
+      <div class="songInfo">
+        <img src="https://i.gifer.com/Nt6v.gif" width="40px" alt="" id="gif" />
+        <span id="masterSongName">Passionfruit</span>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/8da2eb643d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -39,6 +39,7 @@ nav ul li a{
 }
 
 .brand{
+    cursor: pointer;
     display: flex;
     align-items: center;
     font-weight: bolder;

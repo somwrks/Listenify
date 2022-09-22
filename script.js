@@ -39,6 +39,7 @@ let songs = [
   },
 ];
 
+myProgressBar.value = 0;
 
 songItems.forEach((element, i)=>{ 
     element.getElementsByTagName("img")[0].src = songs[i].coverPath; 
@@ -85,8 +86,8 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         songIndex = parseInt(e.target.id);
         e.target.classList.remove('fa-play-circle');
         e.target.classList.add('fa-pause-circle');
-        audioElement.src = `${songIndex+1}.mp3`;
-        masterSongName.innerText = songs[songIndex].songName;
+        audioElement.src = `${songIndex}.mp3`;
+        masterSongName.innerText = songs[songIndex-1].songName;
         audioElement.currentTime = 0;
         audioElement.play();
         gif.style.opacity = 1;
